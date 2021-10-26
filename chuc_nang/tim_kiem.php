@@ -3,7 +3,7 @@
     $search = addslashes($_GET['tu_khoa']);
     if(empty($search))
     {
-        echo "Bạn chưa nhập từ khóa vào ô tìm kiếm";
+          echo "<script type='text/javascript'>alert('Bạn chưa nhập từ khóa vào ô tìm kiếm');</script>";
     }
     else 
     {
@@ -39,7 +39,7 @@
     }                
     }
     else {
-        echo "Không tìm thấy kết quả";
+        echo "<script type='text/javascript'>alert('Không tìm thấy kết quả');</script>";
     }
     }
     echo  "</div>";

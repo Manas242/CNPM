@@ -8,7 +8,7 @@ if(mysqli_num_rows($tv_1)>0)
     while($tv_2=mysqli_fetch_assoc($tv_1))
 {
     echo "<div>";
-    echo "<div class='col-md-3'>";
+    echo "<div class='col-md-3' style='height:400px;'>";
     echo "<div class='nn-product-box'>";
     $link_chi_tiet="?thamso=san_pham_chi_tiet&id=".$tv_2['id'];
     echo "<a href='$link_chi_tiet'>";
